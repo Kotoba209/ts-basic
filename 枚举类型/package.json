@@ -1,0 +1,17 @@
+{
+  "name": "em",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node ./枚举类型.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.9",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
