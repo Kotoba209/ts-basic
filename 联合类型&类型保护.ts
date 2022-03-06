@@ -17,7 +17,7 @@ function trainAnimal(animal: Bird | Dog) {
   } else {
     ;(animal as Dog).bark()
   }
-  // 另一种写法 in 语法
+  // in 类型保护
   // if ('sing' in animal) {
   //   animal.sing()
   // }
