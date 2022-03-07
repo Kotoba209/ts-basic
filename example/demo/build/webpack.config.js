@@ -2,9 +2,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: {
+    'app': './src/index.tsx'
+  },
   output: {
-    filename: 'app.js',
+    filename: '[name].[chunkhash:8].js',
+  },
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx']
   },
   module: {
     rules: [
@@ -28,4 +33,10 @@ module.exports = {
     }),
     new ForkTsCheckerWebpackPlugin()
   ],
+  // 分包
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  }
 }

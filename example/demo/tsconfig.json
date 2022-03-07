@@ -17,7 +17,7 @@
     // "lib": [],                             /* Specify library files to be included in the compilation. ts导入的类库 */
     // "allowJs": true,                       /* Allow javascript files to be compiled. 允许编译js jsx 文件 */
     // "checkJs": true,                       /* Report errors in .js files. 允许在 js 文件报错 */
-    // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "jsx": "react",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. 生成声明文件 */
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
